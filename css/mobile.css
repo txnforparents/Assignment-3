@@ -1,0 +1,169 @@
+@media (max-width: 739px) {
+  body {
+    font-size: 14px;
+  }
+  /* ---------------------------------------------------
+     Phần đầu trang
+  ----------------------------------------------------- */
+  /* Hiệu chỉnh ảnh banner sao cho phù hợp với mobile */
+  .images {
+    height: 280px;
+  }
+
+  /* Hiệu chỉnh tên */
+  .name h1 {
+    font-size: 30px;
+  }
+
+  /* ẩn avatar */
+  .avatar-image {
+    display: none;
+  }
+
+  /* ---------------------------------------------------
+    Phần thanh điều hướng
+  ----------------------------------------------------- */
+  .navbar {
+    display: block;
+    margin-left: 50px;
+  }
+  /* navbar theo hàng dọc */
+  .navlist {
+    display: block !important;
+  }
+  /* ẩn div trung tâm */
+  .navcenter {
+    display: none;
+  }
+
+  /* loại bỏ viền từ laptop ,table */
+  .navbar .navlist div {
+    border: none !important;
+    padding: 10px 5px;
+  }
+
+  .navbar .navlist div:hover {
+    background-color: aqua;
+  }
+
+  /* ---------------------------------------------------
+    Phần mục tiêu, Phần thông tin
+  ----------------------------------------------------- */
+
+  /* Hiệu chỉnh padding */
+  .targets {
+    padding: 50px 30px;
+  }
+
+  /* Căn giữa tiêu đề */
+  .targets h2 {
+    text-align: center;
+  }
+  .information h2 {
+    text-align: center;
+  }
+
+  /* Hiệu chỉnh W của input */
+  .email-block {
+    max-width: 290px;
+  }
+
+  /* --------------------------------------------------------------------------------------------------------
+    Phần  thông tin sự nghiệp (kinh nghiệm, học vấn, hoạt động, sở thích,ngôn ngữ, kỹ năng) cùng cấu trúc gird
+  ----------------------------------------------------------------------------------------------------------- */
+  /* Hiệu chỉnh padding */
+  .info-career {
+    padding: 0 10px;
+  }
+  /* Hiển thị nội dung loại bỏ button view sử dụng cho mobile */
+  .view-button {
+    display: none;
+  }
+  .hidden {
+    display: inline-block;
+  }
+  /* Hiệu chỉnh margin */
+  .content {
+    margin-top: 10px;
+  }
+
+  /* ---------------------------------------------------
+    Phần chứng chỉ
+  ----------------------------------------------------- */
+  /* Hiệu chỉnh padding */
+  .certificate {
+    padding: 40px 30px;
+  }
+
+  /* Ban đầu 2 cột . Hiệu chỉnh 1 cột */
+  .certificate-content {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Chọn certificate-content số lẻ loại bỏ viền */
+  .certificate-content:nth-child(odd) {
+    border-bottom: none;
+  }
+
+  /* Chọn certificate-content số chẵn loại bỏ viền */
+  .certificate-item:nth-child(even) {
+    border-left: none;
+  }
+
+  /* chia lại thành 1 cột 2 hàng: image và content, hiệu chỉnh lại margin, padding */
+  .certificate-content .certificate-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin-bottom: 20px;
+    padding-left: 0px;
+  }
+
+  /* Hiệu chỉnh lại hình ảnh chứng chỉ */
+  .certificate-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Hiệu chỉnh font, khoảng cách các dòng của nôi dung chứng chỉ */
+  .certificate-item div {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* ---------------------------------------------------
+    Phần dự án
+  ----------------------------------------------------- */
+  /* chia thành 1 cột */
+  .project-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /* Hiệu chỉnh padding tổng thể project */
+  .project {
+    padding: 50px 10px;
+  }
+
+  /* Hiệu chỉnh margin */
+  .project-item {
+    margin-bottom: 30px;
+  }
+
+  /* ---------------------------------------------------
+    Phần chân trang, thông tin liên hệ
+  ----------------------------------------------------- */
+
+  /* Hiệu chỉnh kích thước sao cho phù hợp với mobile */
+  .icon-footer {
+    margin-right: 20px;
+  }
+  .icon-footer a {
+    font-size: 10px;
+  }
+  .icon-footer .center {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
